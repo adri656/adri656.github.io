@@ -1,11 +1,26 @@
 /* this is a css comment */
+:root
+    {
+    
+    }
 /* css reset \/ */
 {margin: 0;padding: 0;}
 a{color: rgb(127, 9, 9);}
 
 /* nav bar */
-div.navBar{background-color: rgb(130, 130, 130);}
-div.navBar a{color: rgb(0, 0, 0); padding: 1em; background-color: rgb(209, 209, 209); margin: 1em; float: left;}
+div.navBar
+    {background-color: rgb(157, 157, 157);
+    display: flex;}
+div.navBar ul
+    {list-style: none;
+    display: flex;}
+div.navBar a
+    {color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: rgb(209, 209, 209);
+    margin: 1em;
+    float: left;}
+
 div.navBar img{float: left; scale: 0.8;}
 
 /* home page text */
