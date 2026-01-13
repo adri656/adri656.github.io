@@ -20,11 +20,53 @@
     <a href="contact.html">Contact</a>    
     </nav>
     </div>
-
+    
     <!-- contact sheet -->
     <div class="contactSheet">
     <p>
-    <a href="mailto:somone@example.com">send email</a>
+    <form action="mailto:info@MCAST.com" method="post" enctype="text/plain" class="contact-form">
+        
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="Topic" id="input-topic" required>
+                <option value=""disabled selected>chose a Topic</option>
+                <option value="course questions">course questions</option>
+                <option value="stipend help">stipend help</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        
+        <div>
+            <!-- Lables can be linked to inputs using id -->
+            <label for="input-name:">Name:</label>
+            <input type="text" name="name" id="input-name" 
+            placeholder="john borg" requred min="3"> 
+        </div>
+        
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" 
+            id="input-email"
+            placeholder="me@example.com"
+            required>
+        </div>
+        <!-- text are is used instead of input so you can press enter without submiting the form -->
+        <div>
+            <label for="input-message">your message:</label>
+            <textarea name="message" id="input-message" 
+            placeholder="your message here..."
+            cols="30"
+            rows="10"
+            required
+            minlength="10"></textarea>
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="reset"class="btn btn-secondary">reset</button>
+        
+        
+    </form>
     </p>    
     </div>
 
