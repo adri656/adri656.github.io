@@ -1,33 +1,78 @@
 /* this is a css comment */
-:root
-    {
-    
-    }
-/* css reset \/ */
-{margin: 0;padding: 0;}
-a{color: rgb(127, 9, 9);}
+:root {
+    --gray:#2d4d85;
+    --light:#87b3ff;
+    --dark:#000b3d;
+}
+
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: var(--light);
+    background-color:var(--dark);
+    font-weight: bolder;
+}
+
+.paragraph {
+    background-color: aquamarine; 
+    padding: 1em;
+}
+a{
+    color: rgb(127, 9, 9);
+}
+
+h2{
+    padding: 1em;
+    color:white ;
+    background-color:var(--gray);
+}
 
 /* nav bar */
-div.navBar
-    {background-color: rgb(157, 157, 157);
-    display: flex;}
-div.navBar ul
-    {list-style: none;
-    display: flex;}
-div.navBar a
-    {color: rgb(0, 0, 0);
+.navBar {
+    background-color: rgb(47, 100, 144);
+}
+.navBar .container {
+    display: flex;
+    align-items: center;
+}
+.navBar ul {
+    list-style: none;
+    display: flex;
+}
+.navBar a {
+    color: var(--dark);
     padding: 1em;
-    background-color: rgb(209, 209, 209);
+    background-color:var(--light);
     margin: 1em;
-    float: left;}
+    border-radius: 15%;
+}
 
-div.navBar img{float: left; scale: 0.8;}
 
-/* home page text */
-div.paragraph1{background-color: aquamarine; float: left; padding: 1em;}
 
-/* contact form */
-div.contactSheet {color: blueviolet;}
+.contactSheet {
+    color: blueviolet;
+}
 
-/* services */
+.news{
+    padding: 1em;
+}
+.news p{
+    padding: 1em;
+    background-color:var(--gray);
+}
 
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.intro {
+background-color: purple;
+}
+.intro h1 {
+    font-size: 100px;
+}
