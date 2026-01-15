@@ -1,11 +1,24 @@
 /* this is a css comment */
 :root {
     --gray:#2d4d85;
-    --light:#87b3ff;
+    --light:#94afde;
     --dark:#000b3d;
 }
 
 /* general */
+body{
+    background-color: #ced7e7;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+div.container{
+    display: flex;
+    align-items: center;    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +36,7 @@ h1{
 }
 a{
     color: rgb(127, 9, 9);
+    text-decoration: none;
 }
 
 h2{
@@ -35,10 +49,7 @@ h2{
 .navBar {
     background-color: rgb(47, 100, 144);
 }
-.navBar .container {
-    display: flex;
-    align-items: center;
-}
+
 .navBar ul {
     list-style: none;
     display: flex;
@@ -48,13 +59,24 @@ h2{
     padding: 1em;
     background-color:var(--light);
     margin: 1em;
-    border-radius: 15%;
+    border-radius: 10%;
+}
+.navBar a:hover{
+    color: var(--dark);
+    padding: 1em;
+    background-color:var(--light);
+    margin: 1em;
+    border-radius: 10%;
+    background-color:#798cae;
 }
 
 
-
-.contactSheet {
-    color: blueviolet;
+div.contactSheet {
+    color:var(--light);
+    font-weight: bolder;
+    font-size: large;
+    background-color: var(--dark);
+    padding: 1em;
 }
 
 .news{
@@ -62,17 +84,57 @@ h2{
 }
 .news p{
     padding: 1em;
-    background-color:var(--gray);
-}
-
-.container {
-    max-width: 1280px;
-    margin: auto;
+    background-color:var(--light);
+    display: flex;
 }
 
 .intro {
-background-color: purple;
+    background-color: purple;
 }
 .intro h1 {
     font-size: 100px;
 }
+div.services{
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--dark);
+    display: grid;
+    align-items: left;
+}
+div.services a{
+    border-radius: 0%;
+    text-align: center;
+    font-size: large;
+}
+div.services a:hover{
+    border-radius: 0%;
+    text-align: center;
+    font-size: large;
+    background-color:#798cae;
+}
+
+div.info{
+    max-width: 1280px;
+    margin: auto;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+div.info a{
+    width: 100px;
+    border-radius: 0%;
+    text-align: center;
+    font-weight: bolder;
+    aspect-ratio: 1;1;
+}
+div.info a:hover{
+    width: 100px;
+    border-radius: 0%;
+    text-align: center;
+    font-weight: bolder;
+    aspect-ratio: 1;1;
+    background-color:#798cae;
+}
+
