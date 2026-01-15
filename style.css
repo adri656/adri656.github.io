@@ -152,3 +152,19 @@ div.info a:hover{
     background-color:#798cae;
 }
 
+div.MainInfo{
+    background-color: var(--gray);
+    display: grid;
+}
+div.MainInfo a{
+color: var(--light);
+}
+div.MainInfo img{
+    padding: 1%;
+    display:flex;
+    max-width: 7%;
+    height: auto;    
+}
+div.icons{
+display:flex;
+}
