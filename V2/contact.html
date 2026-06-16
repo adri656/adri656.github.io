@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+
+    <!--  nav bar -->
+    
+    <nav class="navBar">
+        <div class="container">
+            
+            <!--<img src="mcast-logo.png" alt="mcast-logo">-->
+            <a style="background-color: transparent; padding:0; margin-top: 3%;" href="index.html">
+            <img src="mcast-logo.png" alt="mcast-logo">
+            </a>
+            
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="studentInfo.html">Student Info</a></li>
+                <li><a href="careerHelp.html">Career Help</a></li>
+                <li><a style="background-color:var(--gray); color: var(--light);", href="contact.html">Contact</a>  </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- contact sheet -->
+    <main class="container">
+    <div class="contactSheet">
+    <p>
+    <form action="mailto:info@MCAST.com" method="post" enctype="text/plain" class="contact-form">
+        
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="Topic" id="input-topic" required>
+                <option value=""disabled selected>chose a Topic</option>
+                <option value="course questions">course questions</option>
+                <option value="stipend help">stipend help</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        
+        <div>
+            <!-- Lables can be linked to inputs using id -->
+            <label for="input-name:">Name:</label>
+            <input type="text" name="name" id="input-name" 
+            placeholder="Green Greg" requred min="3"> 
+        </div>
+        
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" 
+            id="input-email"
+            placeholder="me@example.com"
+            required>
+        </div>
+        <!-- text are is used instead of input so you can press enter without submiting the form -->
+        <div>
+            <label for="input-message">your message:</label>
+            <textarea name="message" id="input-message" 
+            placeholder="your message here..."
+            cols="30"
+            rows="10"
+            required
+            minlength="10"></textarea>
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="reset"class="btn btn-secondary">reset</button>
+        
+        
+    </form>
+    </p>    
+    </div>    
+    </main>
+
+
+</body>
+</html>
