@@ -80,12 +80,14 @@ div.contactSheet {
 
 .news{
 padding: 2em;
+display: flex;
 }
 .news p{
     padding: 1em;
     background-color:var(--light);
     display: flex;
 }
+
 
 .intro {
     background-color: purple;
